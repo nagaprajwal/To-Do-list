@@ -137,7 +137,7 @@ app.post("/work",function(req,res){
 app.get('/about',function(req,res){
 res.render('about');
 });
-
-app.listen(3000,function() {
+const port=process.env.PORT ||3000;
+app.listen(port,function() {
  console.log("port initialized at channel 3000");   
 })
